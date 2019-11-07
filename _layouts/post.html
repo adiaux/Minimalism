@@ -8,7 +8,7 @@
       {% if page.title %}
         {{ page.title }}
       {% else %}
-        文章页
+        Article page
       {% endif %}
     </title>
 
@@ -41,7 +41,7 @@
       </p>
 
       <div class="article-title-description">
-        <p>发表于 {{ page.date | date: "%Y-%m-%d" }} | 本文共 {{ page.content | number_of_words }} 字</p>
+        <p>Published on {{ page.date | date: "%Y-%m-%d" }} | This article {{ page.content | number_of_words }} word</p>
       </div>
     </header>
 
